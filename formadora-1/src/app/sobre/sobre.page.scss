@@ -1,0 +1,26 @@
+ion-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+  text-align: center;    
+  height: 100%;         
+}
+
+ion-card {
+  width: 95%;
+  padding: 10px;
+}
+
+// Estilo para a foto de perfil
+ion-avatar {
+  width: 120px;
+  height: 120px;
+  margin: 20px auto; 
+  border: 3px solid var(--ion-color-primary);
+}
+
+ion-button {
+    margin-top: 15px;
+}
+

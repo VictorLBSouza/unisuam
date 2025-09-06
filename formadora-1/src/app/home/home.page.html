@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+      Cartão de Identificação
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div id="container">
+
+    <ion-card>
+      <ion-avatar>
+        <img alt="Foto de perfil" src="assets/img/perfil.png" />
+      </ion-avatar>
+
+      <ion-card-header>
+        <ion-card-title>Victor Luiz Batista Souza</ion-card-title>
+        <ion-card-subtitle>Matrícula: 24105408</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-button expand="block" [routerLink]="['/sobre']">
+          Sobre Mim
+        </ion-button>
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>
