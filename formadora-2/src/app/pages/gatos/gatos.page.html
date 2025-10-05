@@ -1,0 +1,18 @@
+<ion-header><ion-toolbar color="primary"><ion-title>Gerador de Gatinhos</ion-title></ion-toolbar></ion-header>
+<ion-content class="ion-padding">
+  <ion-button expand="full" (click)="buscarGatinhos()">
+    <ion-icon slot="start" name="refresh"></ion-icon>
+    Buscar Novos Gatinhos
+  </ion-button>
+  
+  <div class="ion-text-center ion-padding" *ngIf="isLoading">
+    <ion-spinner name="crescent"></ion-spinner>
+    <p>Carregando gatinhos...</p>
+  </div>
+  
+  <div class="cats-grid" *ngIf="catImages.length > 0">
+    <ion-card *ngFor="let cat of catImages" class="cat-card">
+      <img [src]="cat.url" (load)="onImageLoad()" [hidden]="isLoading" alt="Imagem de um gato"/>
+    </ion-card>
+  </div>
+</ion-content>
